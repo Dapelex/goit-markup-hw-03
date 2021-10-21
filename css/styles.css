@@ -68,12 +68,13 @@ body {
 }
 
 .section {
-  margin-top: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.section:not(:last-child) {
+/* .section:not(:last-child) {
   margin-bottom: 94px;
-}
+} */
 
 /*----------------header--------------*/
 
@@ -173,6 +174,8 @@ body {
 .main-section {
   background-color: #2f303a;
   align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .main-title {
@@ -183,14 +186,13 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primery-title-color);
-  padding-top: 200px;
   width: 696px;
   margin-right: auto;
   margin-left: auto;
 }
 
 .button {
-  padding-bottom: 200px;
+  /* padding-bottom: 200px; */
   margin-top: 40px;
 }
 
@@ -214,6 +216,11 @@ body {
 
 /*--------------about us--------------*/
 
+.about {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -229,6 +236,8 @@ body {
 
 .about-list {
   display: flex;
+  /* padding-top: 94px;
+  padding-bottom: 94px; */
 }
 
 .about-item {
@@ -247,6 +256,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primery-text-color);
+  margin-bottom: 10px;
 }
 
 .about-sec-text {
@@ -259,12 +269,32 @@ body {
 
 /*------------what we do-----------*/
 
+.wwd {
+  padding-bottom: 94px;
+}
+
+.wwd-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-title-color);
+}
+
 .wwd-list {
   display: flex;
 }
-.wwd-item {
-  padding-top: 50px;
+
+.section-title {
+  padding-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
+/* .wwd-item {
+  padding-top: 50px;
+} */
 .wwd-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -276,15 +306,25 @@ body {
   height: 648px;
 }
 
-.section-title {
-  padding-top: 94px;
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-title-color);
   margin-bottom: 50px;
+}
+
+.section-title-team {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .team-list {
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
+  /* margin-right: auto;
+  margin-left: auto; */
 }
 
 .team-link {
@@ -296,6 +336,11 @@ body {
   margin-right: 30px;
 }
 
+.team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -303,7 +348,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -323,8 +367,12 @@ body {
   height: 252px;
 }
 
-.logo-footer {
+.footer-container {
   padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo-footer {
   margin-bottom: 20px;
 }
 
@@ -345,7 +393,11 @@ body {
 .adrs-list {
   width: 231px;
   height: 81px;
-  margin-bottom: 60px;
+}
+
+.adrs-item {
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
 .adrs-link-map {
@@ -374,9 +426,10 @@ body {
 
 /*----------------portfolio--------------*/
 
-/* .portfolio {
-  height: 1360px;
-} */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .portfolio-btn-list {
   display: flex;
@@ -391,7 +444,7 @@ body {
   height: 54px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .btn-portfolio {
@@ -419,9 +472,6 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-  margin-bottom: 94px;
 }
 
 .portfolio-item {
@@ -439,6 +489,10 @@ body {
   border: 1px solid #eeeeee;
   border-top: 0;
   margin-top: -5px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .foto-title {
@@ -447,9 +501,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primery-text-color);
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
+
   padding-bottom: 4px;
 }
 
@@ -459,7 +511,4 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--sacondary-text-color);
-  margin-bottom: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
 }
